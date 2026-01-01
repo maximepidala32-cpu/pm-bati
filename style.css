@@ -157,4 +157,8 @@ body {
   .image-text img {
     width: 100%;
   }
+
+/* LOGO */
+  .logo-img {
+    height: 55px;
 }
