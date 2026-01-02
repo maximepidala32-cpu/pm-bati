@@ -181,8 +181,16 @@ body {
   display: block;
 }
 /* LOGO GLOBAL */
+/* LOGO RESPONSIVE FINAL */
 .logo-img {
-  height: 34px;
+  height: 24px; /* iPhone */
   width: auto;
   display: block;
+}
+
+/* Ordinateur */
+@media (min-width: 768px) {
+  .logo-img {
+    height: 32px;
+  }
 }
