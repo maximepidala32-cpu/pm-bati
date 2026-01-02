@@ -1,15 +1,11 @@
-// Animations simples
-const sections = document.querySelectorAll('section');
+// Slider Avant / Après
+document.querySelectorAll('.slider').forEach(slider => {
+  let index = 0;
+  const images = slider.querySelectorAll('img');
 
-sections.forEach(section => {
-  section.style.opacity = 0;
-});
-
-window.addEventListener('scroll', () => {
-  sections.forEach(section => {
-    if (section.getBoundingClientRect().top < window.innerHeight - 100) {
-      section.style.opacity = 1;
-      section.style.transition = "1s";
-    }
-  });
+  setInterval(() => {
+    images[index].classList.remove('active');
+    index = (index + 1) % images.length;
+    images[index].classList.add('active');
+  }, 3000);
 });
