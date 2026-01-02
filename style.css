@@ -162,3 +162,19 @@ body {
   .logo-img {
     height: 55px;
 }
+/* SLIDER AVANT / APRES */
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.slider img {
+  width: 100%;
+  display: none;
+  border-radius: 8px;
+}
+
+.slider img.active {
+  display: block;
+}
